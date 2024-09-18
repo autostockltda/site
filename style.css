@@ -1,0 +1,530 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+
+body {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex2 {
+    color: #000;
+}
+
+h2.titulo {
+    color: #000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo2 {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h3.tituloartigo {
+    text-align: center;
+    font-size: 30px;
+}
+
+span {
+    color: #163b6d;
+}
+
+img {
+    border-radius: 100px    ;
+}
+
+address {
+    font-style: normal;
+    font-size: 12px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(102, 102, 102);
+}
+
+
+
+/* ESTILO CABEÇALHO */
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #000;
+    transform: scale(1.10);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.imagelogo {
+    height: 8vh;
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .textotopo h1 {
+    color: #000;
+    font-size: 52px;
+}
+
+.topo-do-site .textotopo p {
+    color: #000;
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 400px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+/*   ESTILO SOBRE NOS*/
+section.sobrenos {
+    padding: 40px 4%;
+}
+
+section.sobrenos .flex {
+    gap: 60px
+}
+
+.sobrenos .sobrenos-box {
+    color: #000;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.sobrenos .sobrenos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00000073;
+}
+
+.sobrenos .sobrenos-box i {
+    font-size: 70px;
+    color: #163b6d;
+}
+
+.sobrenos .sobrenos-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sobrenos .sobrenos-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*   ESTILO PLANOS*/
+section.sobrenos2 {
+    padding: 40px 4%;
+}
+
+section.sobrenos2 .flex {
+    gap: 60px
+}
+
+.sobrenos2 .sobrenos2-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #699ca1;
+}
+
+.sobrenos2 .sobrenos2-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00000073;
+}
+
+.sobrenos2 .sobrenos2-box i {
+    font-size: 70px;
+    color: #163b6d;
+}
+
+.sobrenos2 .sobrenos2-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sobrenos2 .sobrenos2-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sobrenos2 .sobrenos2-box p {
+    text-align: center;
+}
+
+section.sobrenos2 {
+    padding: 40px 4%;
+}
+
+section.sobrenos2 .flex {
+    gap: 60px
+}
+
+.sobrenos2 .sobrenos3-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #446a8a;
+}
+.sobrenos2 .sobrenos3-box p {
+    text-align: center;
+}
+
+.sobrenos2 .sobrenos3-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00000073;
+}
+
+.sobrenos2 .sobrenos3-box i {
+    font-size: 70px;
+    color: #163b6d;
+}
+
+.sobrenos2 .sobrenos3-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sobrenos2 .sobrenos3-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.sobrenos2{
+    padding: 40px 4%;
+}
+
+section.sobrenos2 .flex {
+    gap: 60px
+}
+
+.sobrenos2 .sobrenos4-box {
+    color: #ffffff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #163c6d;
+}
+
+.sobrenos2 .sobrenos4-box p {
+    text-align: center;
+}
+
+.sobrenos2 .sobrenos4-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00000073;
+}
+
+.sobrenos2 .sobrenos4-box i {
+    font-size: 70px;
+    color: #163b6d;
+}
+
+.sobrenos2 .sobrenos4-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sobrenos2 .sobrenos4-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ESTILO ARTIGOS*/
+.textos {
+    text-align: center;
+}
+
+/* ESTILO DO MENU MOBILE */
+.btn-abrir-menu i{
+    color: #163b6d;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #163b6d;
+    color: #000;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #163b6d;
+    font-size: 30px;
+}
+
+.overlay-menu{
+    background-color: #000000be;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* TELA LOGIN */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-color: #ffffff;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.areaLogin img {
+    width: 420px;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+
+.formLogin input:focus {
+    border: 1px solid #163b6d;
+}
+
+.formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.senhaesquecida {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+    color: #163b6d;
+}
+
+.btn {
+    background-color: #163b6d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 20px;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop {
+        display: none;
+    }
+
+    .topo-do-site .textotopo h1 {
+        text-align: center;
+    }
+
+    .topo-do-site .textotopo p {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .sobrenos .sobrenos-box:hover {
+        transform: scale(1.03);
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+    /* SOBRE NOS */
+    section.sobrenos {
+        padding: 40px 8%;
+    }
+    /* RODAPÉ */
+    address {
+        font-style: normal;
+        font-size: 12px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: rgb(102, 102, 102);
+    }
+}
