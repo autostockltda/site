@@ -16,6 +16,7 @@ overlay.addEventListener('click', ()=>{
 })
 
 
+
 function toggleButton() {
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('password');
@@ -30,4 +31,33 @@ function toggleButton() {
     }
 }
 
+const itens = [];
 
+document.getElementById('cadastro-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const codigo = document.getElementById('codigo').value;
+    const nome = document.getElementById('nome').value;
+    const quantidade = document.getElementById('quantidade').value;
+
+    itens.push({ codigo, nome, quantidade });
+    alert('Item cadastrado com sucesso!');
+    this.reset();
+    document.getElementById('resultado').style.display = 'none'; // Esconde o resultado após cadastro
+});
+
+function buscarItem() {
+    const codigoBusca = document.getElementById('busca').value;
+    const itemEncontrado = itens.find(item => item.codigo === codigoBusca);
+    const resultadoDiv = document.getElementById('resultado');
+
+    if (itemEncontrado) {
+        resultadoDiv.innerHTML = `
+            <h3>${itemEncontrado.nome}</h3>
+            <p>Quantidade em Estoque: ${itemEncontrado.quantidade}</p>
+        `;
+        resultadoDiv.style.display = 'block'; // Mostra a div se o item for encontrado
+    } else {
+        resultadoDiv.innerHTML = '<p>Item não encontrado.</p>';
+        resultadoDiv.style.display = 'block'; // Mostra a div com a mensagem de não encontrado
+    }
+}
