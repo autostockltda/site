@@ -493,7 +493,7 @@ section.sobrenos2 .flex {
 
 /* PÁGINA CADASTRO DE MATERIAL */
 
-body1 {
+.body1 {
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
     display: flex;
