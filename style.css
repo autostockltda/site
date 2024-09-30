@@ -332,6 +332,26 @@ section.sobrenos2 .flex {
     max-height: 100%;
 }
 
+.sobrenos2-box, .sobrenos3-box, .sobrenos4-box {
+    width: 500px; /* Defina a largura fixa */
+    height: 200px; /* Defina a altura fixa */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no tamanho definido */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sobrenos2-box h3, .sobrenos3-box h3, .sobrenos4-box h3 {
+    font-size: 28px; /* Aumenta o tamanho do h3 */
+    margin: 10px 0; /* Ajusta o espaçamento */
+}
+
+.sobrenos2-box p, .sobrenos3-box p, .sobrenos4-box p {
+    font-size: 18px; /* Aumenta o tamanho do parágrafo */
+    line-height: 1.6; /* Melhora a legibilidade com espaçamento entre linhas */
+}
+
+
+
 /* ESTILO ARTIGOS*/
 .textos {
     text-align: center;
@@ -500,7 +520,7 @@ section.sobrenos2 .flex {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0;
 }
 
@@ -607,5 +627,11 @@ input:focus {
         margin-top: 20px;
         color: #666;
         text-align: center;
+    }
+    
+    .sobrenos2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
