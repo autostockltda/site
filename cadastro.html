@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,7 @@
 </head>
 
 <body>
-    <header id="interface"> 
+    <header id="interface">
         <div class="interface">
             <div class="logo">
                 <a href="index.html">
@@ -47,27 +46,21 @@
             <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
-<section class="body1">
-    <div class="page3">
-        <form method="POST" class="formCadastro" id="cadastro-form">
-            <h1>Cadastro de Itens</h1>
-            <label for="codigo">Código do Item</label>
-            <input type="text" id="codigo" placeholder="Digite o código" required />
-            <label for="nome">Nome do Material</label>
-            <input type="text" id="nome" placeholder="Digite o nome do material" required />
-            <label for="quantidade">Quantidade em Estoque</label>
-            <input type="number" id="quantidade" placeholder="Digite a quantidade" required />
-            <button type="submit" class="btn">Cadastrar</button>
-        </form>
-<br><br>
-        <h2>Buscar Item</h2>
-        <input type="text" id="busca" placeholder="Digite o código do item">
-        <button onclick="buscarItem()" class="btn">Buscar</button>
 
-        <div id="resultado" class="item"></div>
-    </div>
-    <br><br><br><br><br>
+    <section class="body1">
+        <div class="page3">
+            <form method="POST" class="formCadastro" id="cadastro-form">
+                <h1>Cadastro de Itens</h1>
+                <label for="codigo">Código do Item</label>
+                <input type="text" id="codigo" placeholder="Digite o código" required />
+                <label for="nome">Nome do Material</label>
+                <input type="text" id="nome" placeholder="Digite o nome do material" required />
+                <label for="quantidade">Quantidade em Estoque</label>
+                <input type="number" id="quantidade" placeholder="Digite a quantidade" required />
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </div>
+    </section>
     <address class="endereco">AutoStock | CNPJ: 61.750.345/0001-57 | Rua Palestra Italia, 214 - São Paulo, SP - 05001-200</address>
-</section>
 </body>
 </html>
