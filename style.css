@@ -56,10 +56,6 @@ span {
     color: #163b6d;
 }
 
-img {
-    border-radius: 100px    ;
-}
-
 address {
     font-style: normal;
     font-size: 12px;
@@ -148,9 +144,7 @@ section.topo-do-site1 .flex {
 }
 
 .topo-do-site1 .img-topo-site1 img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    height: 400px;
+    height: 700px;
     max-width: 100%;
 }                   
 
